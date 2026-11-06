@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "1БАС24006"
+  datasource:
+    url: ${DB_URL:jdbc:h2:file:./data/recycling;DB_CLOSE_ON_EXIT=FALSE}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    hikari:
+      connection-init-sql: SELECT 1
+  sql:
+    init:
+      mode: never
+server:
+  error:
+    include-message: always
