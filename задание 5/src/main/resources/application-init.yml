@@ -1,0 +1,6 @@
+spring:
+  main:
+    web-application-type: none
+  datasource:
+    username: sa
+    password: ${DB_ADMIN_PASSWORD}
